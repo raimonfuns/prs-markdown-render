@@ -30,5 +30,3 @@ Syntax highlight
 ```css
 @import url('~prs-markdown-render/styles/atom-one-light.css')
 ```
-
-s
