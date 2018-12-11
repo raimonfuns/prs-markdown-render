@@ -10,7 +10,7 @@
     "markdown",
     "render"
   ],
-  "author": "raimon <raimonfuns@163.com>",
+  "author": "Junhong <raimonfuns@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "highlight.js": "^9.13.1",
