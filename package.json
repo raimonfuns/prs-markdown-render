@@ -1,6 +1,6 @@
 {
   "name": "prs-markdown-render",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Markdown render for prs. Powered by Markdown-it.",
   "main": "index.js",
   "scripts": {
