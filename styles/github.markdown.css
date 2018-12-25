@@ -148,14 +148,6 @@ a:hover {
   outline-width: 0;
 }
 
-strong {
-  font-weight: inherit;
-}
-
-strong {
-  font-weight: bolder;
-}
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -212,7 +204,7 @@ a:hover {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 hr {
@@ -257,32 +249,32 @@ h6 {
 
 h1 {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 h5 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 h6 {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 p {
@@ -451,7 +443,7 @@ h5,
 h6 {
   margin-top: 24px;
   margin-bottom: 16px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 1.25;
 }
 
@@ -547,7 +539,7 @@ dl dt {
   margin-top: 16px;
   font-size: 1em;
   font-style: italic;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 dl dd {
@@ -562,7 +554,7 @@ table {
 }
 
 table th {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 table th,
