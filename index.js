@@ -1,6 +1,7 @@
 const MarkdownIt = require('markdown-it');
 const MarkdownItFootnote = require('markdown-it-footnote');
 const hljs = require('highlight.js');
+const markdownItGithubPreamble = require('markdown-it-github-preamble');
 
 exports.render = content => {
   const md = MarkdownIt({
@@ -15,7 +16,8 @@ exports.render = content => {
         } catch (__) {}
       }
       return '';
-    }
+    },
   }).use(MarkdownItFootnote)
+    .use(markdownItGithubPreamble);
   return md.render(content);
-}
+};
