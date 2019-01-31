@@ -19,5 +19,9 @@ exports.render = content => {
     },
   }).use(MarkdownItFootnote)
     .use(markdownItGithubPreamble);
-  return md.render(content);
+  return md.render(removeYaml(content));
 };
+
+const removeYaml = (content = '') => {
+  return content.replace(/^---[\w\S\s\d]*---/g, '');
+}
