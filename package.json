@@ -4,7 +4,8 @@
   "description": "Markdown render for prs. Powered by Markdown-it.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "keywords": [
     "markdown",
@@ -17,5 +18,14 @@
     "markdown-it": "^8.4.2",
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-github-preamble": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-es2015": "^6.24.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3"
   }
 }
