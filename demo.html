@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script src="./dist//prs-markdown-render.min.js"></script>
+  <script>
+    const md = `# header1 \n## header2 \n### header3\n### header4\n### header5`;
+    const html = prsMdRender(md);
+    window.document.body.innerHTML = html;
+  </script>
+</body>
+</html>

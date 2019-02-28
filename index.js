@@ -3,7 +3,7 @@ const MarkdownItFootnote = require('markdown-it-footnote');
 const hljs = require('highlight.js');
 const markdownItGithubPreamble = require('markdown-it-github-preamble');
 
-exports.render = content => {
+const render = content => {
   const md = MarkdownIt({
     breaks: true,
     html: true,
@@ -22,6 +22,12 @@ exports.render = content => {
   return md.render(removeYaml(content));
 };
 
+exports.render = render;
+
 const removeYaml = (content = '') => {
   return content.replace(/^---[\w\S\s\d]*---/g, '');
+}
+
+if (window) {
+  window.prsMdRender = render;
 }
