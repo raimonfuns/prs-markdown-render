@@ -1,6 +1,6 @@
 {
   "name": "prs-markdown-render",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Markdown render for prs. Powered by Markdown-it.",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,7 @@
   "author": "Junhong <raimonfuns@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "highlight.js": "^9.13.1",
     "markdown-it": "^8.4.2",
     "markdown-it-footnote": "^3.0.1",
