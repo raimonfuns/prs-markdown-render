@@ -22,7 +22,10 @@ const render = content => {
     .use(markdownItGithubPreamble);
   let result = md.render(removeYaml(content));
   if (window) {
-    const isSafari = navigator.userAgent.search('Safari') >= 0 && navigator.userAgent.search('Chrome') < 0;
+    const isSafari =
+      navigator.userAgent.search('Safari') >= 0 &&
+      navigator.userAgent.search('Chrome') < 0 ||
+      navigator.userAgent.search('AppleWebKit');
     if (isSafari) {
       result = tweakWechatImages(result);
     }
